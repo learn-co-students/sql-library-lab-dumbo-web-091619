@@ -1,0 +1,8 @@
+INSERT INTO series (id, title, author_id, subgenre_id) VALUES (1, "A Song of Ice and Fire", 1, 1),(2, "Harry Potter", 2, 2);
+INSERT INTO subgenres (id, name) VALUES (1, "medieval"),(2, "young adult");
+INSERT INTO authors (id, name) VALUES (1, "George R.R. Martin"), (2, "J.K. Rowling");
+INSERT INTO books (id, title, year, series_id) VALUES (1, "Game of Thrones", 1996, 1), (2, "A Class of Kings", 1998, 1), (3, "A Storm of Swords", 2000, 1), (4, "Harry Potter and the Sorceer's Stone", 1997, 2),(5, "Harry Potter and The Chamber of Secrets", 1998, 2), (6, "Harry Potter and the Prisoner of Azkaban", 1999, 2);
+INSERT INTO characters (id, name, motto, species, author_id) VALUES (1, "Lady", "woof woof", "direwolf", 1), (2, "Ned Stark", "winter is coming", "human", 1), (3, "Tyrion Lannister", "A Lannister always pays his debts", "human", 1),(4, "Arya Stark", "I am a wolf and will not be afraid","human", 1);
+INSERT INTO characters (id, name, motto, species, author_id) VALUES (5, "Sirius Black", "You think the dead we loved ever truly leave us?", "human", 2), (6, "Basilisk", "ssss", "basilisk", 2 ), (7, "Harry Potter", "I am what I am and I'm not ashamed", "human", 2 ), (8, "Hermione Granger", "I mean, you could claim that anything's real if the only basis for believing in it is that nobody's proved it doesn't exist!", "human", 2);
+INSERT INTO character_books (id, character_id, book_id) VALUES (1, 1, 1), (2, 2, 1), (3, 3, 1), (4, 3, 2), (5, 3, 3), (6, 4, 1), (7, 4, 2), (8, 4, 3);
+INSERT INTO character_books (id, character_id, book_id) VALUES (9, 5, 6), (10, 6, 5), (11, 7, 4), (12, 7, 5), (13, 7, 6), (14, 8, 4), (15, 8, 5), (16, 8, 6);
